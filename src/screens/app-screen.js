@@ -7,7 +7,8 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  Button,
 } from 'react-native';
 import { getIOSVersion } from '../api/requestApi';
 import { connect } from 'react-redux';
@@ -21,7 +22,7 @@ const instructions = Platform.select({
         'Shake or press menu button for dev menu',
 });
 
-class App extends Component<{}> {
+class AppScreen extends Component<{}> {
     constructor(props) {
         super(props);
         getIOSVersion().then(res => {
@@ -41,6 +42,10 @@ class App extends Component<{}> {
                 <Text style={styles.instructions}>
                   {instructions}
                 </Text>
+                <Button
+                  onPress={() => this.props.navigation.navigate('NewsList')}
+                  title="Go to news list"
+                />
             </View>
         );
     }
@@ -70,4 +75,4 @@ export default connect(state => {
     return ({
         version: state.version.version,
     })
-})(App);
+})(AppScreen);

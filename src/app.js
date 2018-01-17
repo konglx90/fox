@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import reducers from './redux';
-import AppPage from './pages/app-page';
+// import AppScreen from './screens/app-screen';
+import RootNavigator from './routes';
 
 const middleware = [];
 
@@ -16,7 +17,7 @@ export default class App extends Component<{}> {
     render() {
         return (
             <Provider store={store}>
-                <AppPage />
+                <RootNavigator />
             </Provider>
         );
     }
