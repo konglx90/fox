@@ -55,4 +55,6 @@
 3. npm i --save-dev reactotron-redux-saga
 4. npm i --save-dev reactotron-redux
 5. Reactotron
+
+TODO: 打包发布App 与Reactotron相关的代码不能打包进去
 ```
