@@ -34,9 +34,15 @@
 2. code it in src/redux/configureStore.js src/app.js
 ```
 
-### #5 18.01.18 整合redux-saga
+### #5 18.01.17 整合redux-saga
 
 ```
 1. npm install --save redux-saga
 2. code it in src/redux/configureStore.js src/sagas
+```
+
+### #6 18.01.17 整合jest
+
+```
+1. [doc](https://stackoverflow.com/questions/43514455/react-nativejestsyntaxerror-unexpected-token-import)
 ```
