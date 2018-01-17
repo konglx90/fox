@@ -3,12 +3,12 @@ import { NewsListScreen, BeforeListScreen } from '../screens';
 
 
 const NewsNavigator = TabNavigator({
-  Home: {
-    screen: BeforeListScreen,
-  },
-  NewsList: {
-    screen: NewsListScreen,
-  },
+    NewsList: {
+        screen: NewsListScreen,
+    },
+    Before: {
+        screen: BeforeListScreen,
+    },
 });
 
 export default NewsNavigator;

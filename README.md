@@ -9,7 +9,7 @@ react-native
 react
 react-navigation
 redux react-redux
-Immer
+immer
 redux-persist
 redux-saga
 flow

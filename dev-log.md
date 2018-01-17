@@ -19,3 +19,9 @@
 2. change pages to screens
 3. code it in src/screens src/routes
 ```
+
+### #4 18.01.18 整合Immer
+
+```
+1. npm install immer --save
+```

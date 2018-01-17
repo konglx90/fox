@@ -42,6 +42,7 @@ class AppScreen extends Component<{}> {
                 <Text style={styles.instructions}>
                   {instructions}
                 </Text>
+                <Text>Version: {this.props.version}</Text>
                 <Button
                   onPress={() => this.props.navigation.navigate('NewsList')}
                   title="Go to news list"
