@@ -25,9 +25,7 @@ const instructions = Platform.select({
 class AppScreen extends Component<{}> {
     constructor(props) {
         super(props);
-        getIOSVersion().then(res => {
-            this.props.dispatch(versionActions.versionSuccess(res));
-        });
+        this.props.dispatch(versionActions.version());
     }
     render() {
         console.log(this.props.version, 'version');

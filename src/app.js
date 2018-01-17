@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
-import { createStore, applyMiddleware } from 'redux';
+import {
+    Text,
+} from 'react-native';
 import { Provider } from 'react-redux';
-import reducers from './redux';
-// import AppScreen from './screens/app-screen';
+import { PersistGate } from 'redux-persist/lib/integration/react';
+import configureStore from './redux/configureStore';
 import RootNavigator from './routes';
 
-const middleware = [];
+let { store, persistor } = configureStore();
 
-const store = createStore(
-    reducers,
-    {},
-    applyMiddleware(...middleware),
-);
+const loading = () => <Text>loading...</Text>;
 
 export default class App extends Component<{}> {
     render() {
         return (
             <Provider store={store}>
-                <RootNavigator />
+                <PersistGate loading={loading()} persistor={persistor}>
+                    <RootNavigator />
+                </PersistGate>
             </Provider>
         );
     }

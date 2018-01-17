@@ -2,6 +2,19 @@
 
 Code for React Native.
 
+### start
+
+```
+1. git clone [fox]
+2. cd fox
+3. npm install -g react-native
+4. npm install
+5. open it in Xcode
+6. RUN it
+or
+7. react-native run-ios/run-android
+```
+
 ### use
 
 ```
