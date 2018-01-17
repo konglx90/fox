@@ -46,3 +46,13 @@
 ```
 1. [doc](https://stackoverflow.com/questions/43514455/react-nativejestsyntaxerror-unexpected-token-import)
 ```
+
+### #7 18.01.17 整合Reactotron
+
+```
+1. npm install -g reactotron-cli
+2. npm i --save-dev reactotron-react-native
+3. npm i --save-dev reactotron-redux-saga
+4. npm i --save-dev reactotron-redux
+5. Reactotron
+```
