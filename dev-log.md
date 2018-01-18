@@ -58,3 +58,11 @@
 
 TODO: 打包发布App 与Reactotron相关的代码不能打包进去
 ```
+
+### #8 接入 sentry
+
+[wiki](https://docs.sentry.io/clients/react-native/)
+```
+1. npm install react-native-sentry --save
+2. react-native link react-native-sentry
+```
